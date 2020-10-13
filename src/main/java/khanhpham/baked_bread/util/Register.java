@@ -1,8 +1,8 @@
 package khanhpham.baked_bread.util;
 
-import khanhpham.baked_bread.items.CookedBread;
+import net.minecraft.item.Food;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +17,6 @@ public class Register {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
-    public static final RegistryObject<CookedBread> COOKED_BREAD = ITEMS.register("cooked_bread", CookedBread::new);
+    public static final RegistryObject<Item> COOKED_BREAD = ITEMS.register("cooked_bread", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(8).saturation(3.5f).build())));
 
 }
