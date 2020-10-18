@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "baked_bread:knife"
+  },
+  "pattern":[
+    "RR ",
+    "RR ",
+    "  S"
+  ],
+  "key": {
+    "R": {"tag": "forge:ingots/iron"},
+    "S": {"tag":"forge:rods/wooden"}
+  }
+}
