@@ -18,6 +18,6 @@ public class Register {
     }
 
     public static final RegistryObject<Item> COOKED_BREAD = ITEMS.register("cooked_bread", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(8).saturation(0.7f).build())));
-    public static final RegistryObject<Item> BREAD_WITH_BEEF = ITEMS.register("baked_bread_with_meat", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(0.8f).build())));
-    public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () -> new Item(new Item.Properties().group(ItemGroup.FOOD)));
+    public static final RegistryObject<Item> BREAD_WITH_BEEF = ITEMS.register("baked_bread_with_beef", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder().hunger(10).saturation(0.8f).build())));
+    public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () -> new Item(new Item.Properties().group(ItemGroup.TOOLS)));
 }
