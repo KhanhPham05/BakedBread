@@ -1,7 +1,7 @@
 
 modLoader="javafml" #mandatory
 
-loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[34,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 
 
 license="All rights reserved"
@@ -10,8 +10,9 @@ license="All rights reserved"
 modId="baked_bread" #mandatory
 version="1.6.3" #mandatory
 displayName="Baked Bread" #mandatory
-displayURL="https://www.curseforge.com/minecraft/mc-mods/addition-breads" #optional
-logoFile="mod_icon.png" #optional
+updateJSONURL="http://myurl.me/" #optional
+displayURL="http://example.com/" #optional
+logoFile="examplemod.png" #optional
 credits="Thanks for Forge to give me the way to this mod. Also Thanks to: TechnoVision" #optional
 authors="Khanhpham05" #optional
 description='''
@@ -21,6 +22,6 @@ Just a bread but it cooked and yummy
  
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[31,)" #mandatory
+    versionRange="[34.1.11,)" #mandatory
     ordering="NONE"
     side="BOTH"
